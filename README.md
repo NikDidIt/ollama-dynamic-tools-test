@@ -2,13 +2,14 @@
 This takes kind of a plugin approach for adding new tools to an AI. The plugin information is "compiled" in a file that is then loaded before interacting with the AI.
 
 ## Getting started
-1. Install Ollama
-2. Download the qwen2.5:1.5b model using ````ollama run qwen2.5:1.5b````.
+1. Install Nodejs
+2. Install Ollama
+3. Download the qwen2.5:1.5b model using ````ollama run qwen2.5:1.5b````.
    - This was the smallest model that would reliably work for me. 
-3. Download this project source.
-4. To get the dependencies run ````npm install````.
-5. To use the current set of tools run ````npm run build````. This must be run before running the program.
-6. To run the program run ````npm run start````.
+4. Download this project source.
+5. To get the dependencies run ````npm install````.
+6. To use the current set of tools run ````npm run build````. This must be run before running the program.
+7. To run the program run ````npm run start````.
 
 ## How it works
 Running the ````build```` will generate the file ````sysgen_tools.js````. This file will handle loading each of the plugin tool data. This file is called at the top of the index.js file. 
