@@ -27,6 +27,16 @@ let messages = [{"role": "system", "content": "You are a helpful assistant that 
 //messages.push({ role: 'user', content: 'What is the current AI model am I talking to?' });
 messages.push({ role: 'user', content: 'Set up a meeting for next Friday at 4pm for a meeting with John Doe. We will meet confrence room A. We will disscuss stock options.' });
 
+/*For saving a memory item*/
+//messages.push({ role: 'user', content: 'I changed the air conditioning filter today.' });
+//messages.push({ role: 'user', content: 'I went to the doctor today. I got the flue vaccine.' });
+//messages.push({ role: 'user', content: 'Joe took his car in to the get oil changed today. They also commented that he would need his brakes changed soon.' });
+/*For recalling  a memory item*/
+//messages.push({ role: 'user', content: 'When did I last change the air conditioning filter?' });
+//messages.push({ role: 'user', content: 'When did i get the flu vaccine?' });
+//messages.push({ role: 'user', content: 'When Joes car last have it\'s oil changed?' });
+
+
 const ollama = new Ollama({ host: host })
 const response = await ollama.chat({
   model: model,
